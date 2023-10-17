@@ -1,5 +1,6 @@
-# Landing Page Creation Repository
+![hacktoberfest](https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg) 
 
+# Landing Page Creation Repository 
 Welcome to the Landing Page Creation Repository!
 
 ## Project Overview
@@ -15,6 +16,8 @@ This repository is dedicated to the creation of landing pages, which play a cruc
 - **User Experience**: Landing pages need to provide a seamless and engaging user experience. They should load quickly, be mobile-responsive, and guide users toward the desired action.
 
 - **Data-Driven Optimization**: Creating landing pages is not a one-time effort. It involves constant testing and optimization based on data and user behavior, making it an excellent practice for developers to sharpen their skills.
+
+  ![hacklogo](https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--logomark.b91c17d2.svg)
 
 ## Contributing
 
