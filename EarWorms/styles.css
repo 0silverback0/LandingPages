@@ -1,0 +1,32 @@
+/* Reset some default styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header{
+    height: 500px;
+}
+
+#title{ 
+    color: white;
+}
+
+.navbar {
+    background: linear-gradient(to right, #FF00FF, #00FFFF);
+}
+
+.footer {
+    color: #fff; 
+    padding: 20px;
+    height: 100%; 
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

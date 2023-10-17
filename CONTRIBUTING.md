@@ -1,0 +1,55 @@
+# Contribution Guidelines
+
+Thank you for considering contributing to our project! Your contributions help make this project better and provide valuable learning experiences for developers. To ensure a smooth and productive contribution process, please review the following guidelines.
+
+## Hacktoberfest Eligibility
+
+To be eligible for Hacktoberfest, contributions must adhere to the following guidelines:
+
+1. Contributions must be related to creating or improving landing pages.
+
+2. All contributions must be meaningful and adhere to our project's quality standards.
+
+3. Contributions should not be trivial, such as typo fixes, styling changes, or minor adjustments. They should provide substantial value.
+
+## Getting Started
+
+1. Fork this repository to your GitHub account.
+
+2. Clone your forked repository to your local machine:
+
+Example: git clone https://github.com/your-username/your-forked-repo.git
+
+3. Create a new branch for your contribution:
+
+Example: git checkout -b feature/your-contribution
+
+4. Make your contribution. You can create or improve landing pages.
+
+## Submitting a Pull Request
+
+1. Ensure that your code follows best practices and standards.
+
+2. Provide a clear and concise description of your contribution in the pull request title and description. Mention the issue number if your contribution is related to a specific issue.
+
+3. Make sure your pull request is labeled as "Hacktoberfest."
+
+4. Sign your commits if you haven't already. You can do this by using the `-s` flag when committing, which adds a Signed-off-by line to the commit message.
+
+Example: git commit -s -m "Your commit message"
+
+5. Ensure that your contribution doesn't introduce any copyright violations, plagiarized content, or third-party assets without proper attribution.
+
+6. Be responsive to any feedback and be ready to make changes if requested by the project maintainers.
+
+## Code of Conduct
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you are expected to uphold the standards of behavior outlined in the code of conduct.
+
+## Licensing
+
+Your contributions are subject to the project's MIT License. By submitting a contribution, you agree to allow your work to be distributed under this license. Please read the [LICENSE](LICENSE) file for more details.
+
+Thank you for contributing to our project! Your work is appreciated, and you're helping us create better landing pages and promote learning opportunities for developers.
+
+
