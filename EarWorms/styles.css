@@ -30,3 +30,8 @@ header{
     align-items: center;
     height: 100%;
 }
+.header-bg{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
