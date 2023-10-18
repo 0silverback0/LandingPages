@@ -14,17 +14,35 @@ To be eligible for Hacktoberfest, contributions must adhere to the following gui
 
 ## Getting Started
 
-1. Fork this repository to your GitHub account.
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account 
 
-2. Clone your forked repository to your local machine:
+ 
+2.  [Clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
 
-Example: git clone https://github.com/your-username/your-forked-repo.git
+```
+ git clone https://github.com/your-username/your-forked-repo.git
+```
 
-3. Create a new branch for your contribution:
+3. After cloning you can make changes in your device locally. After making changes create a pull request.
 
-Example: git checkout -b feature/your-contribution
+ 
+4. To create a new branch locally, open your terminal/command prompt and navigate to your Git project directory.
 
-4. Make your contribution. You can create or improve landing pages.
+``` 
+git checkout -b new-branch-name
+```
+
+5.Make your code changes within this new branch. Commit your changes as you normally would with Git:
+
+```
+git add .
+git commit -m "Your commit message"
+```
+6.To push the new branch to the remote repository (like GitHub), use:
+```
+git push origin new-branch-name
+```
+
 
 ## Submitting a Pull Request
 
@@ -36,7 +54,9 @@ Example: git checkout -b feature/your-contribution
 
 4. Sign your commits if you haven't already. You can do this by using the `-s` flag when committing, which adds a Signed-off-by line to the commit message.
 
-Example: git commit -s -m "Your commit message"
+```
+ git commit -s -m "Your commit message"
+```
 
 5. Ensure that your contribution doesn't introduce any copyright violations, plagiarized content, or third-party assets without proper attribution.
 
