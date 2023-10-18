@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeBuddy - Collaborative Coding Platform</title>
+  <!-- Tailwind CSS -->
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+    <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+      <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+    </div>
+    <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+      <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+    </div>
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+      <p class="text-sm leading-6 text-white">
+        <strong class="font-semibold">CodeBuddy Hackathon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Los Angeles from Oct 1 – 30.
+      </p>
+      <a href="#" class="flex-none rounded-full bg-transparent border border-greeny px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-greeny focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 transition-all">Register now <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="flex flex-1 justify-end">
+      <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+        <span class="sr-only">Dismiss</span>
+        <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+  <section class="bg-white relative">
+    <header>
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">CodeBuddy</span>
+            <img class="h-8 w-auto" src="../src/codebuddy-logo.png" alt="CodeBuddy Logo">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button"
+            class="mobile-menu-btn -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Platform</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Solutions</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Community</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sign In <span
+              aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <!-- <div class="fixed inset-0 z-50"></div> -->
+        <div id="mobileMenu"
+          class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">CodeBuddy</span>
+              <img class="h-8 w-auto" src="../src/codebuddy-logo.png" alt="CodeBuddy Logo">
+            </a>
+            <button type="button" class="mobile-menu-btn -m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Platform</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Solutions</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Community</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About
+                  Us</a>
+              </div>
+              <div class="py-6">
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Sign
+                  In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative overflow-hidden bg-white">
+      <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <div class="sm:max-w-lg">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Next Generation Open Source</h1>
+            <p class="mt-4 text-xl text-gray-500">Empowering Developers and Innovators Worldwide</p>
+          </div>
+          <div>
+            <div class="mt-10">
+              <!-- Decorative image grid -->
+              <div aria-hidden="true"
+                class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                <div
+                  class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                  <div class="flex items-center space-x-6 lg:space-x-8">
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                        <img
+                          src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                    </div>
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80"
+                          alt="" class="h-full w-full object-cover object-top">
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.pexels.com/photos/12495614/pexels-photo-12495614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.pexels.com/photos/7504824/pexels-photo-7504824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                    </div>
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.pexels.com/photos/4389466/pexels-photo-4389466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://images.pexels.com/photos/9553905/pexels-photo-9553905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                          alt="" class="h-full w-full object-cover object-center">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#"
+                class="inline-block rounded-full border border-transparent bg-greeny px-8 py-3 text-center font-medium text-white hover:bg-greeny-500 active:bg-greeny-900 transition-all">Join
+                CodeBuddy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-greeny">Elevate Your Development</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Seamless Workflow
+              Transformation
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">At CodeBuddy, we redefine software development. Experience
+              the future of coding with streamlined workflows and efficient deployment practices that inspire
+              innovation.</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute left-1 top-1 h-5 w-5 text-greeny" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Streamlined Deployment.
+                </dt>
+                <dd class="inline">Simplify your deployment pipeline and deploy your applications swiftly, enhancing
+                  your development process.</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute left-1 top-1 h-5 w-5 text-greeny" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Enhanced Security.
+                </dt>
+                <dd class="inline">Build trust and protect your data with SSL certificates, securing your online
+                  presence.</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute left-1 top-1 h-5 w-5 text-greeny" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true">
+                    <path
+                      d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                    <path fill-rule="evenodd"
+                      d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Data Integrity.
+                </dt>
+                <dd class="inline">Ensure data integrity and business continuity with automated database backups,
+                  keeping your data safe and sound.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <img
+          src="https://images.pexels.com/photos/3584926/pexels-photo-3584926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Product screenshot"
+          class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+          width="2432" height="1442">
+      </div>
+    </div>
+  </section>
+
+  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <img
+      src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+      alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div
+      class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Tech Enchantment</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Experience the enchantment of technology and innovation. Our
+          mission is to create magical solutions that simplify and enhance your digital world.</p>
+      </div>
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#" class="group transition duration-300 ease-in-out transform hover:-translate-y-1">Discover Our
+            Projects <span class="ml-2 inline-block transform translate-x-1 group-hover:translate-x-2"
+              aria-hidden="true">→</span></a>
+          <a href="#" class="group transition duration-300 ease-in-out transform hover:-translate-y-1">Join Our
+            Innovation Journey <span class="ml-2 inline-block transform translate-x-1 group-hover:translate-x-2"
+              aria-hidden="true">→</span></a>
+          <a href="#" class="group transition duration-300 ease-in-out transform hover:-translate-y-1">Our Magical Team
+            <span class="ml-2 inline-block transform translate-x-1 group-hover:translate-x-2"
+              aria-hidden="true">→</span></a>
+          <a href="#" class="group transition duration-300 ease-in-out transform hover:-translate-y-1">Innovate with Us
+            <span class="ml-2 inline-block transform translate-x-1 group-hover:translate-x-2"
+              aria-hidden="true">→</span></a>
+        </div>
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse">
+            <dt class="text-base leading-7 text-gray-300">Projects Enchanted</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">50+</dd>
+          </div>
+          <div class="flex flex-col-reverse">
+            <dt class="text-base leading-7 text-gray-300">Tech Magicians</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">200+</dd>
+          </div>
+          <div class="flex flex-col-reverse">
+            <dt class="text-base leading-7 text-gray-300">Spells Cast</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">10,000+</dd>
+          </div>
+          <div class="flex flex-col-reverse">
+            <dt class="text-base leading-7 text-gray-300">Innovation Awards</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">15+</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+        <h2 class="text-2xl font-bold text-gray-900">Level Up Your Programming Experience</h2>
+
+        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 transition-all">
+              <img
+                src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Cutting-edge coding tools and software solutions."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Code Mastery
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Elevate your coding skills with our innovative tools</p>
+          </div>
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 transition-all">
+              <img
+                src="https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Inspirational resources for personal and professional growth."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Self-Improvement
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Unlock your potential and achieve self-discovery</p>
+          </div>
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 transition-all">
+              <img
+                src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Streamlined tools for a productive and efficient development journey."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Development Efficiency
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Elevate your development experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Latest Insights from CodeBuddy</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Empower your software development journey with expert guidance
+          from CodeBuddy partners, collaboraters & community!</p>
+      </div>
+      <div
+        class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <!-- Article 1 -->
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="2023-10-17" class="text-gray-500">Oct 18, 2023</time>
+            <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Product
+              Insights</a>
+          </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Boosting Developer Collaboration with CodeBuddy's Real-Time Editor
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Discover how CodeBuddy's innovative real-time
+              collaborative code editor is revolutionizing developer teamwork.</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img
+              src="https://images.pexels.com/photos/7665702/pexels-photo-7665702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="h-10 w-10 rounded-full bg-gray-50">
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Gemma
+                </a>
+              </p>
+              <p class="text-gray-600">Software Engineer, CodeBuddy</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="2023-10-17" class="text-gray-500">Oct 18, 2023</time>
+            <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Development
+              Trends</a>
+          </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Pioneering Collaboration: How CodeBuddy Redefines Team Coding
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Explore how CodeBuddy's real-time collaborative
+              code editor sets new standards for team-based coding.</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img
+              src="https://images.pexels.com/photos/11296246/pexels-photo-11296246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="h-10 w-10 rounded-full bg-gray-50">
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Johnny
+                </a>
+              </p>
+              <p class="text-gray-600">CEO, CodeBuddy</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="2023-10-17" class="text-gray-500">Oct 18, 2023</time>
+            <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Developer
+              Productivity</a>
+          </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Crafting Code Masterpieces: CodeBuddy's Real-Time Coding Magic
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Learn how CodeBuddy's innovative real-time
+              collaborative code editor enhances developer productivity and creativity.</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img
+              src="https://images.pexels.com/photos/6409119/pexels-photo-6409119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="" class="h-10 w-10 rounded-full bg-gray-50">
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Steve
+                </a>
+              </p>
+              <p class="text-gray-600">Software Engineer, CodeBuddy</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- More posts... -->
+      </div>
+    </div>
+  </div>
+
+  <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Discover Our Newsletter</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-300">Join our community and explore a world of knowledge. Subscribe
+            to our newsletter and ignite your curiosity.</p>
+          <div class="mt-6 flex max-w-md gap-x-2">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" required
+              class="min-w-0 flex-auto rounded-full border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+              placeholder="Enter your email">
+            <button type="submit"
+              class="flex-none rounded-full bg-greeny px-4 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-greeny-500 active:bg-greeny-900 transition-all">Get
+              Started</button>
+          </div>
+        </div>
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">Weekly Knowledge</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Fuel your curiosity with our weekly insights. Delve into a world of
+              knowledge and learning.</dd>
+          </div>
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">Zero Clutter</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Enjoy content without the clutter. We promise a spam-free, quality
+              reading experience.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+  </div>
+
+  <script src="../src/dropdown-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+# Ignore macOS system files
+*.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+Desktop.ini
+
+# Ignore Linux trash directory
+.Trash-*/
+
+# Ignore temporary files created by text editors
+*~
+
+# Ignore Node.js dependencies
+*node_modules
+
+# Ignore Python virtual environment
+*venv
+
+# Ignore Python __pycache__ directory
+*__pycache__/
