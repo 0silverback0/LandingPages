@@ -35,3 +35,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.earworms-details h2, .earworms-details p{
+    color: black;
+}
+
