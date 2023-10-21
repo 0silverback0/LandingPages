@@ -28,7 +28,7 @@ function Home() {
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <a class="nav-item nav-link hovering" href="#">HOME</a>
+              <a class="nav-item nav-link hovering" href="../index.html">HOME</a>
               <a class="nav-item nav-link hovering" href="#">BOOKS</a>
               <a class="nav-item nav-link hovering" href="#">Add Books</a>
               <a class="nav-item nav-link hovering" href="#">GetAll Users</a>
