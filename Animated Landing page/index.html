@@ -9,15 +9,22 @@
 
 <body>
     <header>
+        <div class="menu-toggle">&#9776;</div>
         <nav>
             <div class="logo">
                 <img src="images/logow.png" width="150">
             </div>
             <div class="menu">
-                 <a href="/index.html">Home</a>
-                 <a href="#">Features</a>
-                 <a href="#">Bookings</a>
-                 <a href="#">Login</a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li>   <a href="#">Features</a></li>
+                <li>  <a href="#">Bookings</a></li>
+                <li>     <a href="#">Login</a></li>
+            </ul>
+                 
+              
+               
+            
             </div>
         </nav>
         <div class="line">
@@ -43,6 +50,15 @@
             <img src="images/icon4.png" alt="">
         </div>
     </header>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+    
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+    
 </body>
 
 </html>
