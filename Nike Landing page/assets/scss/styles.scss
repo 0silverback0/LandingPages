@@ -1,0 +1,403 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3.5rem;
+
+    /*===== Colors =====*/
+    --first-color: #A29596;
+    --primary: #A29596;
+    --second-color: #33303D;
+    --black-color: #111111;
+    --white-color: #FFF;
+
+    /*===== Font and typography =====*/
+    --body-font: 'Roboto', sans-serif;
+    
+    --biggest-font-size: 1.5rem;
+    --big-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+
+    // Responsive typography
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 3.25rem;
+        --big-font-size: 2.25rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .813rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*===== z index =====*/
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+h1,h2,h3,p{
+    margin: 0;  
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*===== LAYOUT =====*/
+.grid{
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--white-color);
+}
+/*===== HEADER & NAV =====*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu{
+        @media screen and(max-width: 968px){
+            position: fixed;
+            left: -100%;
+            top: var(--header-height);
+            background-color: var(--white-color);
+            width: 80%;
+            height: 100%;
+            padding: 2rem;
+            z-index: var(--z-fixed);
+            transition: .3s;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    &__item{
+        font-weight: var(--font-bold);
+    }
+    &__link{
+        color: var(--black-color);
+    }
+    &__toggle{
+        cursor: pointer;
+    }
+}
+/* Show menu */
+.show{
+    left: 0;
+}
+
+/*===== HOME =====*/
+.home{
+    height: 100vh;
+    display: grid;
+    row-gap: 3.5rem;
+    grid-template-rows: repeat(2, max-content);
+    overflow: hidden;
+}
+/*===== Sneaker =====*/
+.sneaker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    position: relative;
+
+    &__figure{
+        width: 240px;
+        height: 240px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        transition: .5s;
+    }
+    &__img{
+        width: 313px;
+        position: absolute;
+        top: 16%;
+        left: 9%;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(30deg);
+        opacity: 0;
+        filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
+
+        &.shows{
+            opacity: 1;
+        }
+    }
+    &__colors{
+        position: absolute;
+        right: 2%;
+    }
+    &__color{
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-bottom: .5rem;
+        cursor: pointer;
+        
+        &.active{
+            border: 2px solid var(--white-color);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+        }
+    }
+    &__colors-one{
+        background-color: var(--first-color);
+    }
+    &__colors-two{
+        background-color: var(--black-color);
+    }
+}
+/*===== Data =====*/
+.data{
+    margin-bottom: 1.5rem;
+
+    &__subtitle{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        margin-bottom: .5rem;
+    }
+    &__description{
+        font-size: var(--normal-font-size);
+    }
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+/*===== Size =====*/
+.size{
+    &__title{
+        font-size: var(--normal-font-size);
+        margin-bottom: 1rem;
+    }
+    &__content{
+        display: flex;
+    }
+    &__tallas{
+        width: 30px;
+        height: 30px;
+        margin-right: .5rem;
+        font-size: var(--smaller-font-size);
+        text-align: center;
+        line-height: 30px;
+        border-radius: .25rem;
+        cursor: pointer;
+    }
+    &__tallas.active{
+        background-color: var(--primary);
+        color: var(--white-color);
+    }
+}
+/*===== Qty =====*/
+.quantity{
+    &__title{
+        font-size: var(--normal-font-size);
+        margin-bottom: 1rem;
+    }
+    &__content{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--primary);
+        color: var(--white-color);
+        padding: .5rem;
+        border-radius: .25rem;
+    }
+}
+/*===== Price =====*/
+.price{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--white-color);
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__title{
+        font-size: var(--big-font-size);
+        color: var(--black-color);
+    }
+    &__button{
+        background-color: var(--primary);
+        color: var(--white-color);
+        padding: 1.25rem 3.125rem;
+        border-radius: .5rem;
+        transition: box-shadow .4s;
+    }
+}
+/*===== BREAKPOINTS =====*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .home{
+        row-gap: 1.5rem;
+    }
+    .sneaker{
+        &__figure{
+            width: 210px;
+            height: 210px;
+        }
+        & img{
+            width: 230px;
+        }
+        &__colors{
+            right: 1%;
+        }
+    }
+
+    .price{
+        &__title{
+            font-size: var(--normal-font-size);
+        }
+        &__button{
+            padding: 1.25rem 2rem;
+        }
+    }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 480px){
+    .data__description{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        grid-template-columns: repeat(2, max-content);
+        align-content: center;
+        justify-content: center;
+        column-gap: 6rem;
+        row-gap: 0;
+    }
+
+    .sneaker{
+        margin-top: 0;
+
+        &__colors{
+            right: -10%;
+        }
+        &__img{
+            left: -6%;
+        }
+    }
+
+    .actions{
+        margin-bottom: 3rem;
+    }
+
+    .price{
+        position: initial;
+        background-color: initial;
+        justify-content: space-between;
+        box-shadow: none;
+        padding: 0;
+
+        &__title{
+            color: var(--black-color);
+            font-weight: var(--font-medium);
+        }
+    }
+
+}
+
+/* For large devices */
+@media screen and(min-width: 968px){
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__list{
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+        &__toggle{
+            display: none;
+        }
+    }
+
+    .sneaker{
+        margin: 0;
+
+        &__figure{
+            width: 430px;
+            height: 430px;
+        }
+        &__img{
+            width: 550px;
+            top: 13%;
+        }
+        &__colors{
+            right: initial;
+            bottom: -3rem;
+
+            & span{
+                display: inline-block;
+            }
+        }
+    }
+    .info{
+        align-self: center;
+    }
+    .data{
+        margin-bottom: 2.5rem;
+
+        &__subtitle{
+            font-size: 1.5rem;
+        }
+        &__title{
+            margin-bottom: 1rem;
+        }
+    }
+    .size__tallas{
+        width: 34px;
+        height: 34px;
+        line-height: 35px;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
