@@ -136,7 +136,9 @@ nav .menu a:hover {
     color: #000000;
     transition: all 0.3s ease 0s;
 }
-@media (max-width: 768px) {
+/
+/* @media (max-width: 768px) {
+  
     nav .menu {
         display: none;
         flex-direction: column;
@@ -156,4 +158,29 @@ nav .menu a:hover {
     nav .menu ul li {
         margin: 10px 0;
     }
+} */
+@media (min-width: 768px) {
+    nav .menu-toggle {
+        display: block;
+    }
+    nav .menu-toggle .one,
+    nav .menu-toggle .two,
+    nav .menu-toggle .three {
+        background-color: #fff;
+        height: 3px;
+        width: 20px;
+        margin: 5px;
+        transition: all 0.3s ease 0s;
+    }
+    nav .menu-toggle.active .one {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    nav .menu-toggle.active .two {
+        opacity: 0;
+    }
+    nav .menu-toggle.active .three {
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
 }
+```
+```
