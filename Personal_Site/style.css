@@ -1,0 +1,66 @@
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-family: 'Yeseva One', cursive;
+    background-color: #9BABB8;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-img {
+    height: 400px;
+}
+
+.card-img-overlay {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#about-me {
+    background-color: #EEE3CB;
+}
+
+#about-me img {
+    border-radius: 50%;
+}
+
+.body-text {
+    background-color: #D7C0AE;
+    padding: 30px;
+}
+
+#skills {
+    background-color: #D7C0AE;
+}
+
+.skill-list {
+    background-color: #967E76;
+    padding: 50px;
+    color: white;
+}
+
+.gif {
+    margin-left: 40px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: #9BABB8;
+    text-align: center;
+}
+
+.cno {
+    margin: 0;
+}
+
