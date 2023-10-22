@@ -89,7 +89,7 @@ transition: all 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     padding: 0 2em;
-    min-height: 15em;
+    min-height: 8em;
   }
   h3 {
     width: 100%;
@@ -167,17 +167,6 @@ align-items: center;
   .copyright p {
     font-size: 0.9em;
     text-align: right;
-  }
-  .about
-    {
-        
-     
-        margin-left: 5rem;
-    }
-  .links
-  {
-  
-    margin-left: 16rem;
   }
   .subscribe
   {
