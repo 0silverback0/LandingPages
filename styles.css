@@ -20,12 +20,41 @@ header{
 }
 
 .project {
-    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.77);
     color: white; 
     padding: 20px;
     margin: 10px;
+    /* border: solid 1px white; */
 }
+.project button
+{
+
+    /* border-radius: 1rem; */
+    background-color: rgba(0, 0, 0, 0.777);
+    color: white; 
+   
+    width: max-content;
+    border: solid 1px white;
+    cursor: pointer;
+   
+}
+.project button:hover
+{
+  border-radius: 2rem;
+    background-color:#5dbea3;
+    color: rgb(0, 0, 0); 
+transition: all 0.5s ease-in-out;
+    border: none;
+   /* box-shadow: #5dbea3 5px 3px 10px 0px; */
+}
+
 .project a {
+    /* border:solid 1px white; */
     color: white; 
     text-decoration: none;
 }
@@ -115,6 +144,9 @@ header{
   }
   
   .copyright {
+display: flex;
+justify-content: center;
+align-items: center;
     padding: 0.3em 1em;
     background-color: #25262e;
   }
@@ -135,6 +167,22 @@ header{
   .copyright p {
     font-size: 0.9em;
     text-align: right;
+  }
+  .about
+    {
+        
+     
+        margin-left: 5rem;
+    }
+  .links
+  {
+  
+    margin-left: 16rem;
+  }
+  .subscribe
+  {
+    
+    margin-left: 15rem;
   }
   @media screen and (max-width: 850px) {
     .row.primary {
