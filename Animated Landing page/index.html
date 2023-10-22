@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+ 
 </head>
 
 <body>
     <header>
-        <div class="menu-toggle">&#9776;</div>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
         <nav>
             <div class="logo">
                 <img src="images/logow.png" width="150">
@@ -17,29 +24,22 @@
             <div class="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li>   <a href="#">Features</a></li>
-                <li>  <a href="#">Bookings</a></li>
-                <li>     <a href="#">Login</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
-                 
-              
-               
-            
             </div>
         </nav>
-        <div class="line">
-            <div class="box1"></div><br>
-            <div class="box2"></div><br>
-            <div class="box3"></div>
-        </div>
 
         <div class="container">
             <div class="left">
-                   <h1>Future <br>On Your Hand </h1>
-                   <button>Order now</button>
+                   <h1 style="margin-top: 17%;">Future <br>On Your Hand </h1>
+                   <img class="small-device-image" src="images/wat3.png" style="width: 57%;" alt="watch Image">
+                
+                   <button class="ordernow" style="position: inherit; display: block; margin-left: 74px; margin-bottom: 90px; margin-top: 117px;">Order now</button>
             </div>
             <div class="right">
-                <img src="images/wat3.png" alt="watch Image">
+                <img src="images/wat3.png" style="display: none;" alt="watch Image">
             </div>
         </div>
 
@@ -57,8 +57,8 @@
         menuToggle.addEventListener("click", () => {
             menu.classList.toggle("active");
         });
+        
+        
     </script>
-    
 </body>
-
 </html>
