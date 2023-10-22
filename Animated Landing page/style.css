@@ -320,8 +320,8 @@ nav .menu a:hover {
 
 .s-icon {
     position: absolute;
-    bottom: 10%;
-    left: 5%;
+    bottom: -29%;
+    left: 9%;
 }
 
 .s-icon img {
@@ -384,6 +384,7 @@ nav .menu a:hover {
         margin: 10px 0;
     }
 } */
+
 @media (min-width: 768px) {
     nav .menu-toggle {
         display: block;
@@ -409,23 +410,89 @@ nav .menu a:hover {
 }
 /* Rest of the CSS remains the same */
 
+/* Rest of the CSS remains the same */
+
+/* Additional CSS for small devices */
 @media (max-width: 768px) {
-    nav .menu a:last-child {
+    .menu a:last-child {
         background: black;
         border-radius: 5px;
     }
 
-    nav .menu a:hover {
+    .menu a:hover {
         background: black;
         border-radius: 5px;
         transition: 0.4s linear;
     }
-    .s-icon{
-        margin-top: -90%;
+
+    .s-icon {
+        margin-top: -50%;
         position: initial;
         margin-left: 18%;
     }
-    h1{
+
+    h1 {
         margin-top: -118%;
+     }
+
+    .right img {
+        width: 50%;
+    }
+}
+/* Rest of the CSS remains the same */
+
+/* Additional CSS for small devices */
+@media (max-width: 768px) {
+    /* Other styles for small devices */
+
+    .left {
+        position: relative;
+    }
+
+    .small-device-image {
+        position: absolute;
+        top: 125%;
+        left: 35%;
+        transform: translateX(-50%);
+        width: 87%;
+    }
+.ordernow{
+    top: 400%;
+    position: absolute;
+    left: 5%;
+}
+    .right img {
+        width: 50%;
+    }
+}
+
+/* Rest of the CSS remains the same */
+
+/* Additional CSS for small devices */
+@media (max-width: 768px) {
+    /* Other styles for small devices */
+
+    .left {
+        position: relative;
+    }
+
+    .small-device-image {
+        position: absolute;
+        top: 58%;
+        left: 35%;
+        transform: translateX(-50%);
+        width: 87%;
+    }
+
+    .ordernow {
+position: relative !important;
+        top: 13% !important;
+        left: -1%;
+        transform: translateX(-50%);
+        display: block !important;
+    }
+
+    .right img {
+        width: 50%;
     }
 }
