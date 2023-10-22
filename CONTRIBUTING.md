@@ -2,9 +2,11 @@
 
 Thank you for considering contributing to our project! Your contributions help make this project better and provide valuable learning experiences for developers. To ensure a smooth and productive contribution process, please review the following guidelines.
 
-1. Add a link in your projects navigation back to /index.html
+1. Add your project, be sure to optimize for all devices
 
-2. Add your name and link to your project in the root index.html
+2. Add a link in your projects navigation back to /index.html
+
+3. Add your name and link to your project in the root index.html
 
 ## Hacktoberfest Eligibility
 
