@@ -40,3 +40,4 @@ Before contributing, please review our [Contribution Guidelines](CONTRIBUTING.md
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
 We look forward to your contributions and collaboration in creating impactful landing pages and furthering your web development skills.
+
