@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+.home {
+    color: black;
+}
+
 .card {
     padding: 10px;
 }
