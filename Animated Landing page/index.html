@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+ 
 </head>
 
 <body>
     <header>
-        <div class="menu-toggle">&#9776;</div>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
         <nav>
             <div class="logo">
                 <img src="images/logow.png" width="150">
@@ -17,21 +24,12 @@
             <div class="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li>   <a href="#">Features</a></li>
-                <li>  <a href="#">Bookings</a></li>
-                <li>     <a href="#">Login</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
-                 
-              
-               
-            
             </div>
         </nav>
-        <div class="line">
-            <div class="box1"></div><br>
-            <div class="box2"></div><br>
-            <div class="box3"></div>
-        </div>
 
         <div class="container">
             <div class="left">
@@ -57,8 +55,8 @@
         menuToggle.addEventListener("click", () => {
             menu.classList.toggle("active");
         });
+        
+        
     </script>
-    
 </body>
-
 </html>

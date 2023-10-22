@@ -11,6 +11,231 @@ body {
 
 }
 
+/* style.css */
+
+/* Add the following CSS rules at the end of the file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0px 5px;
+}
+
+.menu a:last-child {
+    background: #e74c3c;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background: #e74c3c;
+    border-radius: 5px;
+    transition: 0.4s linear;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.left {
+    flex-basis: 40%;
+}
+
+.right {
+    flex-basis: 50%;
+}
+
+.right img {
+    width: 100%;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, transparent, #0004) ;
+}
+
+.left h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.left button {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.s-icon {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.s-icon img {
+    width: 40px;
+    margin: 0px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    width: 200px;
+}
+
+nav .menu ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+nav .menu ul li {
+    margin-right: 20px;
+}
+
+nav .menu ul li:last-child {
+    margin-right: 0;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .menu a:hover {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+/* Rest of the CSS remains the same */
+
+.menu-toggle .one, 
+.menu-toggle .two, 
+.menu-toggle .three {
+    background-color: #fff;
+    height: 3px;
+    width: 20px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-toggle.active .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .two {
+    opacity: 0;
+}
+
+.menu-toggle.active .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+
+/* Responsive adjustments for the navbar */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav .menu ul {
+      display: none;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    nav .menu.active ul {
+      display: flex;
+    }
+  
+    nav .menu ul li {
+      margin: 10px 0;
+    }
+  
+    nav .menu-toggle {
+      display: block;
+      cursor: pointer;
+      color: white;
+    }
+  
+    nav .menu-toggle .one,
+    nav .menu-toggle .two,
+    nav .menu-toggle .three {
+      background-color: white;
+      height: 3px;
+      width: 20px;
+      margin: 5px;
+      transition: all 0.3s ease 0s;
+    }
+  
+    nav .menu-toggle.active .one {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    nav .menu-toggle.active .two {
+      opacity: 0;
+    }
+  
+    nav .menu-toggle.active .three {
+      transform: rotate(-45deg) translate(7px, -8px);
+    }
+  }
+  
 
 
 .menu a {
@@ -136,7 +361,7 @@ nav .menu a:hover {
     color: #000000;
     transition: all 0.3s ease 0s;
 }
-/
+
 /* @media (max-width: 768px) {
   
     nav .menu {
@@ -182,5 +407,25 @@ nav .menu a:hover {
         transform: rotate(-45deg) translate(7px, -8px);
     }
 }
-```
-```
+/* Rest of the CSS remains the same */
+
+@media (max-width: 768px) {
+    nav .menu a:last-child {
+        background: black;
+        border-radius: 5px;
+    }
+
+    nav .menu a:hover {
+        background: black;
+        border-radius: 5px;
+        transition: 0.4s linear;
+    }
+    .s-icon{
+        margin-top: -90%;
+        position: initial;
+        margin-left: 18%;
+    }
+    h1{
+        margin-top: -118%;
+    }
+}
