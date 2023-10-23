@@ -71,7 +71,7 @@ a, a:hover {
     color: #1f1f1f;
 }
 
-.nav-wrapper li .link-item{
+.navbar-wrapper li a{
     color: #1f1f1f;
     font-size: 14px;
     font-weight: 700;
@@ -79,7 +79,11 @@ a, a:hover {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
+}
 
+.navbar-wrapper li:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
 }
 
 .navbar-wrapper li.active a {
