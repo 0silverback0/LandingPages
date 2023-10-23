@@ -87,6 +87,10 @@ footer p {
   margin: 0;
 }
 
+footer ul {
+  margin: 0;
+}
+
 /* Animations */
 @keyframes spin3d {
   0% {
