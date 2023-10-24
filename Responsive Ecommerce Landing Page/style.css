@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color: crimson;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* ---------------------------------- */
+/* Navbar */
+nav{
+    display: flex;
+    height: 5vmax;
+    box-shadow: 0 0 10px black;
+    /* font-size: 1.3rem; */
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-left{
+    /* border: 2px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left > a{
+    color: crimson;
+    text-decoration: none;
+    font-size: 2vmax;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-mid{
+    /* border: 2px solid red; */
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-mid > a{
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 1.4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-mid > a:hover{
+    color: crimson;
+    border-bottom: 3px solid red;
+    
+}
+.nav-right{
+    /* border: 2px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right > img {
+    width: 2.5vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* Home section */
+
+#Home{
+    display: flex;
+    height: 90vh;
+    background-image: radial-gradient(rgb(230, 221, 255),rgb(184,184, 223));
+    /* justify-content: space-between; */
+}
+
+.container{
+    width: 100%;
+ /* border: 2px solid green; */
+}
+
+.home-left{
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    /* box-sizing: border-box; */
+    justify-content: center;
+}
+
+.home-left > h1{
+    font-size: 5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-left > h2{
+    font-size: 2vmax;
+    font-family: sans-serif;
+}
+
+.home-left > p {
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    width: 11vmax;
+    margin-top: 4%;
+    margin-left: 2%;
+    padding: 0.8vmax;
+    border-radius: 2vmax;
+    border: none;
+    background-color: var(--color);
+    color: white;
+    cursor: pointer; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(168, 24, 53);
+}
+
+.home-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-right > img {
+    margin-right: 7rem;
+    filter: drop-shadow(0 0 20px black);  /* WOW! */
+}
+
+/* ---------------------------------- */
+/* Product section */
+
+#Products > h1{
+    text-align: center;
+    margin: 5vmax auto;
+    /* font-size: 2rem; */
+    font-size: 2.5vmax;
+    border-bottom: 5px solid crimson;
+    padding: 1vmax;
+    width: 25vw; /* for border of size */
+}
+
+.Product-container{
+    /* border: 2px solid crimson; */
+    /* width: 80% */
+    max-width: 80vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.Product {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.Product > img {
+    /* border: 2px solid crimson; */
+    width: 22vmax;
+}
+
+.Product:hover{
+    transform: translateY(-10px);
+}
+
+.Product div{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------------------------------- */
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: #1f1f1f;
+    color: white;
+    width: 100vw;
+}
+
+.footer-left{
+    /* border: 2px solid white; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.footer-left > h4{
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-left > p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer-left img{
+    width: 10vmax;
+    /* margin: 1vmax; */
+    cursor: pointer;
+}
+
+.footer-middle{
+    /* border: 2px solid white; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.4vmax;
+    padding: 2rem;
+}
+
+.footer-middle > h1{
+    font-size: 4vmax;
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-middle > p{
+    text-align: center;
+    max-width: 50%;
+}
+
+.footer-right{
+    /* border: 2px solid white; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-right > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 1.4vmax;
+}
+
+.footer-right > a{
+    font-size: 1.3vmax;
+    text-decoration: none;
+    color: white;
+}
