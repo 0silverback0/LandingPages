@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="script.js" ></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" />
     <title>My portfolio</title>
@@ -16,17 +16,33 @@
                 <div class="logo-wrapper f-left">
                     <a href="#" class="logo">Portfolio</a>
                 </div>
+                <p class="more">
+                <button onclick="openNavList()">
+                    <img class="open" id="open" src="bars-solid.svg" alt="more-options"/>
+                </button>
+                <button onclick="closeNavList()"> 
+                    <img class="close" id="close" src="xmark-solid.svg" alt="more-options"/>
+                </button></p>
                 <div class="navbar-wrapper f-right">
                     <ul class="navbar-list">
-                        <li class="active"><a href="/index.html" class="link-item" >Home</a> </li>
+                        <li class="active"><a href="../index.html" class="link-item" >Home</a> </li>
                         <li><a href="#" class="link-item" >About</a> </li>
                         <!-- <li><a href="#" class="link-item" >Services</a></li> -->
-                        <li><a href="github.com" class="link-item" >Projects</a> </li>
+                        <li><a href="https://github.com/" class="link-item" >Projects</a> </li>
                         <li><a href="#contact-content" class="link-item" >Contact</a> </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="droplist" id="droplist">
+            <ul class="navbar-list">
+                <li class="active"><a href="../index.html" class="link-item" >Home</a> </li>
+                <li><a href="#" class="link-item" >About</a> </li>
+                <!-- <li><a href="#" class="link-item" >Services</a></li> -->
+                <li><a href="https://github.com/" class="link-item" >Projects</a> </li>
+                <li><a href="#contact-content" class="link-item" >Contact</a> </li>
+            </ul>
+        </div>
     </header>
    <section id="hero-area">
        <div class="hero-cover">
