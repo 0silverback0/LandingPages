@@ -257,5 +257,19 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tiltElements = document.querySelectorAll(".project");
+    
+            VanillaTilt.init(tiltElements, {
+                max: 25, // Maximum tilt rotation in degrees
+                speed: 1000, // Tilt speed
+                glare: true, // Add glare effect
+                "max-glare": 0.2, // Maximum glare opacity
+            });
+        });
+    </script>
+    
 </body>
 </html>

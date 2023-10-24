@@ -1,134 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta
-      http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <!-- ===== STYLE.CSS ===== -->
-    <link
-      rel="stylesheet" href="./css/styles.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <!-- ===== REMIXICON CDN ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/29b275fb0c.js" crossorigin="anonymous"></script>
-    <title>Responsive Landing Page HTML CSS & JS</title>
-  </head>
-  <body>
-    <!-- ===== OVERLAY ===== -->
-    <div class="overlay first"></div>
-    <div class="overlay second"></div>
-    <div class="overlay third"></div>
-    <!-- ===== CONTAINER'S ===== -->
-    <div class="left_container"></div>
-    <div class="right_container"></div>
-    <!-- ===== STRIPS ===== -->
-    <div class="strips">
-      <div class="left_strip"></div>
-      <div class="right_strip"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- ===== STYLE.CSS ===== -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <!-- ===== REMIXICON CDN ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/29b275fb0c.js" crossorigin="anonymous"></script>
+  <title>Responsive Landing Page HTML CSS & JS</title>
+</head>
+
+<body>
+  <!-- ===== OVERLAY ===== -->
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
+  <!-- ===== CONTAINER'S ===== -->
+  <div class="left_container"></div>
+  <div class="right_container"></div>
+  <!-- ===== STRIPS ===== -->
+  <div class="strips">
+    <div class="left_strip"></div>
+    <div class="right_strip"></div>
+  </div>
+  <!-- ===== NAVBAR ===== -->
+  <header class="header">
+
+    <div class="logo">
+      <h3 class="nav__logo">lioness</h3>
     </div>
-    <!-- ===== NAVBAR ===== -->
-    <header>
-      <nav class="nav body_layout">
-        <div class="nav_insider">
-        <div class="logo">
-          <h3 class="nav__icon">lioness
-          </h3>
-        </div>
-        <div class="nav__menu" id="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="../index.html" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">hunt-mode</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">social</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">playfulness</a>
-            </li>
-            <li class="nav__item search_btn">
-              <div class="search-content">
-                <div class="search-title">
-                  <h3>Search...</h3>
-                </div>
-                <fieldset>
-                  <input type="text" id="search-bar" placeholder="Search..."/>
-                  <div class="icons-container">
-                    <div id="search-icon"></div>
-                  </div>
-                  <i class="ri-search-fill"></i>
-                </fieldset>
-            </li>
-            </li>
-            </button>
-            </li>
-          </ul>
-          </div>
-        </div>
-        <div class="cart_btn_wrapper">
-        <div class="searchBox">
-          <input class="searchInput"type="text" name="" placeholder="Search">
-          <button class="searchButton" href="#">
-          <i class="material-icons">
-          search
-          </i>
-          </button>
-        </div>
-        <button class="menu_toggle_btn" id="menu_toggle_btn">
-          <i class="ri-menu-3-fill nav__icon"></i>
-      </nav>
-    </header>
-    <!-- ===== SOCIAL ===== -->
-    <div class="social">
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="../index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">hunt-mode</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">social</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">playfulness</a></li>
+      </ul>
+    </nav>
+    <div class="menu_toggle_btn">
+      <i class="ri-menu-line nav__icon"></i>
+      <i class="ri-close-fill nav__icon"></i>
+    </div>
+  </header>
+  <!-- ===== SOCIAL ===== -->
+  <div class="social">
     <ul class="social__list">
-    <li class="social_item">
-    <a href="" class="social-button social-button--github">
-    <i class="fa-brands fa-github"></i>
-    </a>
-    </li>
-    <li class="social_item">
-    <a href="" class="social-button social-button--linkedin">
-    <i class="fa-brands fa-linkedin-in"></i>
-    </a>
-    </li>
-    <li class="social_item">
-    <a href="" class="social-button social-button--facebook">
-    <i class="ri-twitter-fill"></i>
-    </a>
-    </li>
+      <li class="social_item">
+        <a href="" class="social-button social-button--github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li class="social_item">
+        <a href="" class="social-button social-button--linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="social_item">
+        <a href="" class="social-button social-button--facebook">
+          <i class="ri-twitter-fill"></i>
+        </a>
+      </li>
     </ul>
-    </div>
-    <!-- ===== PRODUCT-IMAGE ===== --><img src="./assets/lioness.png" class="product_img" alt="product_img"><!-- ===== PRODUCT-INFO ===== -->
-    <div class="product_text">
+  </div>
+  <!-- ===== PRODUCT-IMAGE ===== --><img src="./assets/lioness.png" class="product_img"
+    alt="product_img"><!-- ===== PRODUCT-INFO ===== -->
+  <div class="product_text">
     <h1 class="product_title">lioness
     </h1>
     <p class="product_type">bravery, courage, & strength</p>
-    </div>
-    <!-- ===== BOTTOM-NAV ===== -->
-    <div class="bottom_nav">
+  </div>
+  <!-- ===== BOTTOM-NAV ===== -->
+  <div class="bottom_nav">
     <div class="slide_nav_wrapper">
-    <button class="prev direction_btn">
-    <i class="ri-arrow-right-s-line"></i>
-    </button>
-    <button class="next direction_btn">
-    <i class="ri-arrow-left-s-line"></i>
-    </button>
+      <button class="prev direction_btn">
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
+      <button class="next direction_btn">
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
     </div>
     <div class="dots_wrapper">
-    <ul class="dots">
-    <li class="dot"></li>
-    <li class="dot"></li>
-    <li class="dot active"></li>
-    <li class="dot"></li>
-    <li class="dot"></li>
-    </ul>
+      <ul class="dots">
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot active"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
     </div>
-    </div>
-    <!-- ===== GSAP CDN ===== --><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script><!-- ===== SCRIPT.JS ===== --><script src="./js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+  </div>
+  <!-- ===== GSAP CDN ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script><!-- ===== SCRIPT.JS ===== -->
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
