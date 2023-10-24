@@ -1,0 +1,104 @@
+body {
+  background-color: #000000;
+  color: #ffa500;
+  align-items: center;
+}
+
+.hero-section {
+  background-color: #ffa500;
+  border: 5px solid #000000;
+  animation: wave 5s linear infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.hero-section h1 {
+  color: black;
+}
+
+.movies-section {
+  background-color: #000000;
+}
+
+.movies-section h2 {
+  color: #ffa500;
+}
+
+.movie-card {
+  background-color: #ffa500;
+  color: black;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+  align-items: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffa500;
+}
+.nav {
+  background-color: black;
+  border-bottom: 5px solid #00ff00;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.nav a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+.btn-watch-now {
+  background-color: black;
+  border: 5px solid #ffa500;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-watch-now:hover {
+  color: #ff8000;
+  text-shadow: 0 0 10px #e2e2e2;
+}
+.btn-watch-now:hover {
+  animation: wave 1s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+img{
+  block-size: 100%;  
+  align-items: center;
+}
