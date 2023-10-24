@@ -51,6 +51,16 @@ ul, li {
    
 }}}
 
+@media(min-width:556px){
+    .droplist{
+        height: 0;
+    }
+    .droplist li{
+        display: none;
+        height: 0;
+    }
+}
+
 @media(max-width: 555px){
     .navbar-wrapper{
         display: none;
