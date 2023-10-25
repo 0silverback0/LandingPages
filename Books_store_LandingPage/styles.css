@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
   }
 
+  .Home-Page h2, .Home-Page a{
+    margin-left:25%;
+  }
+
 .navbar-brand {
     font-size: 24px;
     transition: color 0.3s;
@@ -39,5 +43,15 @@
     to {
       width: 100%;
     }
+  }
+
+  @media (max-width:530px){
+    body{
+      margin: 0;
+    }
+    .Home-Page{
+      width: 100%;
+    }
+
   }
   
