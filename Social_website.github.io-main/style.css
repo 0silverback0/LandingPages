@@ -1754,3 +1754,7 @@ button {
         width: 5vh;
     }
 }
+
+button{
+    width: 100px;
+}
