@@ -28,6 +28,8 @@ nav ul li a:hover{
     color:lightyellow;
     text-decoration: underline;
     font-weight: bolder;
+    text-align: center;
+    justify-content: center;
     padding: 5px;
 }
 
@@ -41,6 +43,8 @@ nav ul li a:hover{
 
 .heading{
     font-size: 3.5rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     color: #FA7C7C;
     text-align: center;
@@ -60,8 +64,17 @@ nav ul li a:hover{
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items:center;
     padding:100px;
+    gap:40px;
+    scroll-behavior: smooth;
+}
+
+.text{
+    font-size: xx-large;
+    font-family: garamond;
+    color: orange;
 }
 
 .food-images{
@@ -70,6 +83,7 @@ nav ul li a:hover{
     gap:10px;
     /* flex-wrap: wrap; */
     align-items: center;
+    margin-top: 40px;
 }
 
 #pizza,#burger,#chinese,#indian-street-food,#south-indian{
@@ -89,7 +103,7 @@ nav ul li a:hover{
     transform: scale(1.1);
 }
 
-#best-seller-heading{
+#best-seller-heading, #food-items-heading{
     margin-top:40px;
     padding:10px;
     background-color: #00FF66;
