@@ -1,0 +1,401 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+   
+
+}
+.nav{
+    padding-right: 40px ;
+    padding-top: 7px;
+}
+
+
+
+.bar{
+   
+    font-family: 'JetBrains Mono' , monospace;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    background: white;
+    padding: 0;
+    margin: 0;
+
+    
+}
+.Logo  img{
+    
+    
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:  300px;
+    height: 180px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 45px;
+     
+}
+
+
+
+
+
+
+
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+a:link{
+   text-decoration: none; 
+}
+
+
+.body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'JetBrains Mono', monospace;
+    align-items: center;
+    
+
+}
+
+
+.title{
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.para{
+    
+    font-size: 30px;
+    width: 700px;
+    
+}
+
+
+
+#content{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    color: white;
+    font-family: 'Poppins' , monospace;
+   
+    
+    
+    
+}
+
+.content-details{
+    background-color: #131316;
+    display: flex;
+    text-align: center;
+    
+}
+
+#content-title{
+    display: grid;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    
+    
+}
+#You , #We{
+  
+    font-size: 6em;
+    font-weight: 600;
+    
+    
+}
+
+#You{
+    padding-right: 40px;
+}
+
+
+
+.allpics{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.content-title{
+    display: grid;
+    align-items: center;
+    margin: -10px;
+    padding-left: 80px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins',monospace;
+    font-weight: 500;
+    font-size: 32px;
+    
+}
+
+section{
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+}
+
+.inner-sec{
+    background-color: #FECD04;
+    animation: animate 1s ease-in-out 1s;
+
+}
+
+.outer-sec{
+    background-color: #0049C0;
+    animation: animate 1s ease-in-out 1.3s;
+
+
+}
+@keyframes animate {
+
+    from{
+        opacity: 0;
+        transform: translateX(+100%);
+
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+    
+}
+
+.Generate{
+   
+    color: #FF7235;
+
+
+}
+.start{
+    padding-top: 20px;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.icons{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+
+#Institution{
+ 
+   background-image: url("./calendar.jpg");
+   background-size: cover;
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+  
+    
+}
+
+#Personal {
+    background-image: url("./book.jpg");
+   background-size: cover;
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   
+  
+}
+   
+
+.description{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
+}
+
+#task{
+    height: 400px;
+
+}
+
+
+
+
+
+table, th, td {
+    border:3px solid black;
+  }
+  table{
+    width:100%;
+  }
+
+  .big-box{
+    height: 80vh;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.contact-us{
+    color: #ea3057;
+    font-size: 40px;
+
+   
+}
+
+.nice ,.touch {
+    animation: move 1s ease-in-out 1s;
+}
+
+
+@keyframes move{
+    from{
+        transform: translateX(-60%);
+
+    }
+    to{
+
+        transform: translateX(0);
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Silkscreen&display=swap');
+
+
+
+
+.outer-box {
+    width: 800px;
+    height: 800px;
+    
+    
+}
+
+.inner-box {
+    font-family: 'Lato', sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    padding-top: 80px;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #010101;
+    z-index: 2;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.signup-header p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.signup-body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body p input[type="submit"]:hover {
+    background-color: #2773a5;
+}
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #2773a5;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 30%;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 40%;
+}
+
+
+
+
+
+

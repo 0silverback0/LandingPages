@@ -1,0 +1,38 @@
+
+table, th, td {
+    border: 3px solid #3498db; /* Border color: Blue */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color:white; /* Blue */
+    color:black;
+}
+
+td {
+    background-color: #ecf0f1; /* Light gray */
+}
+
+th.lunch, td.lunch {
+    background-color: #e74c3c; /* Red */
+    color: white;
+}
+
+th.days {
+    background-color:grey; /* Green */
+    color: white;
+}
+
+td:hover {
+    background-color: #d5dbdb; /* Light gray on hover */
+}
