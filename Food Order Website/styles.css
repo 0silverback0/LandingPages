@@ -103,7 +103,7 @@ nav ul li a:hover{
     transform: scale(1.1);
 }
 
-#best-seller-heading, #food-items-heading{
+#best-seller-heading, #food-items-heading,#offers-heading{
     margin-top:40px;
     padding:10px;
     background-color: #00FF66;
@@ -152,6 +152,42 @@ nav ul li a:hover{
     color: #FA7C7C;
 }
 
+.offers{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    justify-content: space-around;
+    margin:40px;
+}
+
+.offers-text{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color:#FA7C7C;
+}
+
+#offer1,#offer2{
+    width:40%;
+    height:20vh;
+    padding:50px;
+    background-color: #D9D9D9;
+}
+
+.offer-btn{
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    align-items:center;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+.offer-btn:hover{
+    background-color: lightyellow;
+    color: #FA7C7C;
+}
+
 
 /* Responsiveness Code */
 @media only screen and (max-width:600px){
@@ -195,5 +231,22 @@ nav ul li a:hover{
     }
     .Order-Now{
         font-size: large;
+    }
+    .offers{
+        flex-direction: column;
+    }
+    #offer1,#offer2{
+        width:80%;
+        margin-left: 0;
+        height:20vh;
+        padding:20px;
+        background-color: #D9D9D9;
+    }
+    .offers-text{
+        font-size: x-large;
+    }
+    .offer-btn{
+        font-size: x-large;
+        margin-left: 25%;
     }
 }
