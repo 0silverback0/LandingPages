@@ -81,7 +81,7 @@ nav ul li a:hover{
     display:flex;
     flex-direction: row;
     gap:10px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 40px;
 }
@@ -150,4 +150,50 @@ nav ul li a:hover{
 .Order-Now:hover{
     background-color: lightyellow;
     color: #FA7C7C;
+}
+
+
+/* Responsiveness Code */
+@media only screen and (max-width:600px){
+    .heading{
+        font-size: 2rem;
+    }
+
+    .container{
+        flex-direction: column;
+        gap:10px;
+        padding:0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+    .text{
+        font-size: x-large;
+    }
+    #main{
+        width:100%;
+    }
+
+    #pizza,#burger,#chinese,#indian-street-food,#south-indian{
+        width:15%;
+        height:20vh;
+        border-radius:50%;
+    }
+    /* .best-seller-items{
+        height: 20vh;
+    } */
+    #BSI1,#BSI2,#BSI3{
+        height:100%;
+        
+    }
+    .BSI-images{
+        height:30vh;
+        width: 100%;
+    }
+    .BSI-text{
+        font-size: x-large;
+    }
+    .Order-Now{
+        font-size: large;
+    }
 }
