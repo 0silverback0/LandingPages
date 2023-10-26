@@ -36,7 +36,7 @@ nav ul li a:hover{
 #search{
     float: right;
     border: 2px solid #FA7C7C;
-    color: white;
+    color: black;
     font-size: large;
     padding: 10px solid black;
 }
@@ -84,10 +84,11 @@ nav ul li a:hover{
     flex-wrap: wrap;
     align-items: center;
     margin-top: 40px;
+    margin-left: 0%;
 }
 
 #pizza,#burger,#chinese,#indian-street-food,#south-indian{
-    width:18%;
+    width:17%;
     height:40vh;
     border-radius:50%;
 }
