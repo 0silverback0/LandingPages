@@ -2,12 +2,11 @@
 function Home() {
     return `
       <div class="Home-Page text-black container-fluid">
-        <h1 style="margin-left: 650px; color: red;">Admin Page</h1>
         <div class="row container">
           <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column" style="height: 91.5vh;">
-            <h2 style="font-size: 80px; color: orange; margin-left: 120px;">Book store</h2>
-            <h2 style="font-size: 60px; color: white; margin-left: 120px;">For You</h2>
-            <a href="#" style="margin-left: 120px;" class="btn btn-primary btn-outline my-3">View Books</a>
+            <h2 style="font-size: 80px; color: orange;">Book store</h2>
+            <h2 style="font-size: 60px; color: white;">For You</h2>
+            <a href="#"  class="btn btn-primary btn-outline my-3">View Books</a>
           </div>
           <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column" style="height: 91.5vh;">
           </div>

@@ -14,6 +14,13 @@ body {
     font-weight:normal;
 }
 
+.more{
+    display: none;
+}
+.droplist {
+    display: none;
+}
+
 ul, li {
     list-style: none;
     display: inline-block;
@@ -44,6 +51,55 @@ ul, li {
    
 }}}
 
+@media(min-width:556px){
+    .droplist{
+        height: 0;
+    }
+    .droplist li{
+        display: none;
+        height: 0;
+    }
+}
+
+@media(max-width: 555px){
+    .navbar-wrapper{
+        display: none;
+    }
+    .more{
+        display: block;
+        z-index: 5;
+        float: right;
+        margin-right: 5px;
+    }
+    .more img.open{
+        height: 20px;
+        position: relative;
+    }
+    .more img.close{
+        height: 22px;
+        position: relative;
+        padding-right:15px;
+    }
+    .more button{
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+    }
+    .more button:hover{
+        cursor: pointer;
+    }
+    .more img.close{
+        display: none;
+    }
+    .droplist li{
+        display: block;
+    }
+    .droplist ul{
+        width: 100%;
+    }
+}
+
+
 .f-left {
     float: left;
 
@@ -71,7 +127,8 @@ a, a:hover {
     color: #1f1f1f;
 }
 
-.nav-wrapper li .link-item{
+
+.navbar-wrapper li a, .droplist li a{
     color: #1f1f1f;
     font-size: 14px;
     font-weight: 700;
@@ -79,10 +136,14 @@ a, a:hover {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
-
 }
 
-.navbar-wrapper li.active a {
+.navbar-wrapper li:hover, .droplist li:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+}
+
+.navbar-wrapper li.active a, .droplist li.active a {
     color: #e65f78
 }
 #hero-area {

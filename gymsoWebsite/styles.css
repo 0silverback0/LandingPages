@@ -363,6 +363,17 @@ margin:13px 0;
   color:#7f8c8d;
 }
 
+.backToTop{
+  
+  font-size: 40px;
+  background-color: #F13A11;
+  color: white;
+  border-radius: 50%;
+}
+#backTotop{
+  position: absolute;
+  right: 40px;
+}
 @media screen and (max-width:1042px){
   .nav{
     padding:1rem 4.5rem;

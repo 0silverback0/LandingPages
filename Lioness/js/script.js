@@ -1,15 +1,13 @@
 // Toggle NAV-MENU
-const toggleMenu = (toggleId, navId) => {
-  const toggle_btn = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+const toggle_btn = document.querySelector(".menu_toggle_btn");
+const nav_header = document.querySelector(".header");
 
-  if (toggle_btn && nav) {
-    toggle_btn.addEventListener('click', () => {
-      nav.classList.toggle('show')
-    })
-  }
-}
-toggleMenu('menu_toggle_btn', 'nav__menu');
+const toggleNavbar = () => {
+  // alert("Plz Subscribe ");
+  nav_header.classList.toggle("active");
+};
+
+toggle_btn.addEventListener("click", () => toggleNavbar());
 
 // CONTAINER's
 gsap.from('.left_container', {
