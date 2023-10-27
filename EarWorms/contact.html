@@ -5,28 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="outer">
-     <div class="inner-outer">
-        <div class="header">
-        <h1>Contact Us</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a id="title" class="navbar-brand" href="#">Earworms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="header text-center">
+                    <h1 class="mt-5">Contact Us</h1>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-       <ul>
-        <li><input type="text" placeholder="First name"></li>
-        <li><input type="text" placeholder="Last name"></li>
-        <li><input type="email" placeholder="abc@gmail.com"></li>
-        <li><input type="text" placeholder="Phone Number"></li>
-        <li><textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea></li>
-        <li>
-            <div class="button">
-                <button type="submit">Submit</button>
-           </div>
-        </li>
-       </ul>
-     </div>
-    </div>
-    <footer class="footer mt-3" >
+
+    <footer class="footer mt-3" style="background: linear-gradient(to right, #00FFFF, #FF00FF);">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -35,5 +72,10 @@
             </div>
         </div>
     </footer>
+    
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
 </body>
 </html>
