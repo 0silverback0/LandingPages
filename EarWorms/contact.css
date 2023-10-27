@@ -13,12 +13,12 @@ body
 {
 /* border: solid 2px white; */
  width: auto;
-    height: 100vh;
-    
+ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 100px */
+    
 }
 .inner-outer
 {
@@ -26,11 +26,16 @@ body
     width: 100%;
     max-width: 500px;
     padding: 30px;
-    height: auto;
+height: 100%;
     background-color: rgba(0, 0, 0, 0.575);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+
+  
 }
 li{
     list-style: none;
@@ -40,7 +45,7 @@ li{
 {
     color: white;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     /* color: #555; */
 }
 ul li 
@@ -74,7 +79,7 @@ textarea
     border-radius: 5px;
     outline: none;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
 }
@@ -102,11 +107,12 @@ button[type="submit"] {
     background-color: #4dff00c8;
     color: #333333;
     transition: all 0.5s ease-in-out;
+    font-weight: 700;
   }
 
   .footer {
     color: #fff; 
-    padding: 20px;
+    padding: 5px;
     height: 100%; 
     /* margin-top: 100px; */
 }
@@ -117,4 +123,25 @@ button[type="submit"] {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+@media (max-width:765px){
+    .inner-outer
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width:328px){
+    .inner-outer
+    {
+   margin-top: 5%;
+    }
+  h1{
+    font-size: 20px;
+  }
+  .inner-outer h1
+{
+   margin-bottom: 3px;
+}
 }
