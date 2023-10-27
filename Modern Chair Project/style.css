@@ -14,6 +14,30 @@ body{
     background: #1f2029;
 }
 
+header, footer {
+  position: relative;
+  z-index: 1000;
+  padding: 1.25rem;
+  font-size: larger;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+footer a{
+  position: absolute;
+  right: 0;
+  padding-right: 1.25rem;
+  text-decoration: none;
+  color: white;
+  
+}
+
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
