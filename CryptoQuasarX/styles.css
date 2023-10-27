@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f5f6fa !important;
+    color: black !important;
+}
+
+.title{
+    margin-top: 5rem;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.title-p{
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.button-create{
+    width: auto;
+    margin-bottom: 4rem;
+}
+
+.img{
+    padding: 20px 0;
+    height: 75%;
+    width: 75%;
+    margin: auto;
+}
+
+.title2{
+    font-weight:bold;
+    padding-top: 30px;
+}
+
+.hero .container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 36vw;
+    margin-bottom: 30px;
+}
+
+.tittle{
+    margin: 70px 0;
+}
+
+/* showcase */
+
+.imgg{
+    width: 75px;
+}
+
+.left{
+    position: relative;
+}
+
+.showcase{
+    padding-top: 150px;
+}
+
+.title-showcase{
+    top: 0;
+    font-weight: 900;
+    text-align: left;
+    font-size: 5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.showcase .container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+}
+
+
+.showcase-img{
+    width: 400px;
+}
+
+
+.showcase2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.showcase2-title{
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.showcase2-p{
+    color: grey;
+    font-weight: 100;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.learn-more{
+    color: #4368C7;
+    font-weight: bold;
+}
+
+/* footer */
+.footer1{
+    background-color: #4368C7;
+    padding: 15vh 0;
+    width: 100%;
+}
+
+.footer1 .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1 .container h1{
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.footer1 .container h7{
+    color: #fff;
+}
+
+.footer2{
+    margin: 30px 0;
+}
+
+.footer2 .container{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.footer2 .container .left{
+    justify-content: left;
+    flex: 1;
+}
+
+.footer2 .container .right{
+    position: absolute;
+    z-index: -1;
+    width:40%;
+    flex: 1;
+}
+
+
+.footer2-title{
+    font-weight: 900;
+    text-align: left;
+    font-size: 2.5rem;
+    margin-top: 15vh;
+}
+
+.footer2-p{
+    text-align: left;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.footer2-button{
+    justify-content: left;
+    width: 400px;
+}
+
+.footer3{
+    background-color: #4368C7;
+    color: #fff;
+}
+
+.footer3 .container ul li .color{
+    color: #fff !important;
+}
+
+.form-footer{
+    padding: 50px 0;
+}
+
+.btn-color{
+    color: white !important;
+    background-color: #4368C7 !important;
+}
+
+/* mobile view */
+@media (max-width: 567px){
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .title-p{
+        font-size: 0.7rem;
+    }
+    
+    .hero .container{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 400vw;
+        margin-bottom: 30px;
+    }
+
+    .img{
+        padding: 20px 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .title2{
+        font-weight:bold;
+        padding-top: 30px;
+        font-size: 2rem;
+    }
+
+    .showcase .container{
+        display: none;
+
+    }
+
+    .showcase-img{
+        display: none;
+    }
+
+    .showcase2-title{
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .showcase2-p{
+        color: grey;
+        font-weight: 100;
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+
+    .footer1{
+        padding: 7vh 0;
+    }
+    
+    .footer1 .container h1{
+        font-size: 2rem;
+    }
+
+    .footer2 .container .right{
+        display: none;
+    }
+
+    .footer2 .container .left h1, p{
+        text-align: center;
+    }
+
+    .footer2 .container .left p{
+        text-align: center;
+    }
+
+    .footer2-button{
+        justify-content: c;
+        width: 100%;
+    }
+
+}
