@@ -4,9 +4,32 @@ Thank you for considering contributing to our project! Your contributions help m
 
 1. Add your project, be sure to optimize for all devices
 
-2. Add a link in your projects navigation back to /index.html
+2. Add a link in your projects navigation home tab back to the LandingPages/index.html
 
-3. Add your name and link to your project in the root index.html
+3. Add your project name, github profile link, github name, project directory ```example landingPages/index.html``` and link to your project in the root index.html
+  ```html 
+      <div class="col-12 col-lg-4 col-md-6">
+                    <div class="project bg-black bg-opacity-75 p-4 rounded-5">
+                        <p class="fs-5 fw-medium text-white">YOUR PROJECT NAME</p>
+                        <p class="d-flex align-items-center gap-2">
+                            <i class="fa-brands fa-github text-white"></i>
+                            <a href="YOUR GITHUB PROFILE" target="_blank" 
+                                class="text-decoration-none text-white">YOUR NAME</a>
+                        </p>
+                        <div class="w-100 d-flex align-items-center justify-content-end">
+                            <button
+                                class="d-inline-flex flex-row align-items-center gap-2 px-4 py-3 rounded-pill bg-transparent border border-white">
+                                <a href="./YOUR PROJECT DIRECTORY" target="_blank"
+                                    class="text-decoration-none text-white d-flex align-items-center gap-2">
+                                    <p class="fw-medium">View project</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+```
+
 
 ## Hacktoberfest Eligibility
 
