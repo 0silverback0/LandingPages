@@ -19,13 +19,13 @@ header, footer {
   z-index: 1000;
   padding: 1.25rem;
   font-size: larger;
+  text-align: center;
   
 }
 
 header a {
   text-decoration: none;
   color: white;
-  
 }
 
 footer a{
