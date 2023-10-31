@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="bar">
+
+            <div  class = "Logo"><img src = "Logo.gif"></div>
+    
+            <div class = "nav">
+    
+                <ul>
+                  <a href="index.html" id="ho"><li>Home</li></a>
+                   <a href="#content1" id="co"> <li>Content</li></a>
+                    <a href="#about" id="ab"><li>About</li></a>
+                    <a href="#contact" id="con"><li>Contact</li></a>
+                </ul>
+            </div>
+            </div>
+        <div id = "home">
+        <div class="body">
+
+
+            <div class="title">
+                <div class="message">
+
+                    <div>Minimal </div>
+                    <div>Design</div>
+                    <div class="para">
+                        Welcome to our innovative routine generator website, where your daily life gets a streamlined boost! Our platform is your go-to solution for crafting personalized schedules that seamlessly align with your unique aspirations and commitments.
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="something">
+
+                <img src="./work.png">
+
+            </div>
+
+
+        </div>
+    </div>
+        <main>
+
+            <div id="content">
+                
+                
+                <div class="content-details">
+
+                    <div class="content-title">
+    
+                        <div id="You">You Enumerate </div>
+                        <div id="We">We Generate</div>
+    
+                    </div>
+                        <div class="info">
+                            <section class = "inner-sec">
+                                Effortlessly create and fine-tune routines that encompass work, leisure, fitness, and
+                                everything in between. 
+                                With our user-friendly interface, you'll embark on a journey of efficient time management
+                                and enhanced productivity.
+                                Input your preferences, time slots, and recurring patterns, and watch as our cutting-edge
+                                technology transforms your data into beautifully organized routines. 
+                            </section>
+                            
+                            <section class = "outer-sec">
+                                Our routine generator empowers you to take control of your schedule, helping you strike the perfect balance between work and play, and ensuring you never miss a beat. 
+                                Whether you're an aspiring achiever, a wellness enthusiast, or someone seeking harmony in their day-to-day activities, our platform is here to guide you.
+                            </section>
+
+                            
+    
+                        </div>
+
+                </div>
+                 
+                <div class= "Generate">
+                    <div class="start">Start your journey toward optimized living today.</div> 
+                    <div class="icons">
+                        <a href = "Lara.html">
+                        <div id = "Institution"></div></a>
+                        <div id = "Personal"></div>
+                        
+                    </div>
+
+                    <div class="description">
+                        <div>Personal Routines</div>
+                        <div> Institutional Routines</div>
+                        
+                    </div>
+    
+                </div>
+                        
+                        
+            </div>
+            
+
+        </main>
+        <div class = "big-box">
+
+
+            <header class="contact-us">
+                <h1 class = "nice"><b>NICE TO MEET YOU!</b></h1>
+                <p class = "touch"><b>want to get in touch? </b></p>
+            </header>
+            <div class="whole_background">
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <header class="signup-header">
+                            <h1>Signup</h1>
+                            <p>It just takes 30 seconds</p>
+                        </header>
+                        <main class="signup-body">
+                            <form action="#">
+                                <p>
+                                    <label for="fullname" >Full Name</label>
+                                    <input type="text" id="fullname" placeholder="Anuj Kumar Sharma" required>
+                                </p>
+                                <p>
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" placeholder="anujbhaiyaofficial@gmail.com" required>
+                                </p>
+                                <p>
+                                    <label for="password">Phone No.</label>
+                                    <input type="text" id="phone" placeholder="XXXXXXXXXX" required>
+                                </p>
+                                <p>
+                                    <input type="submit" id="submit" value="Create Account">
+                                </p>
+                            
+                            </form>
+                        </main>
+            
+                        <footer class="signup-footer">
+                            <p>Already have an Account? <a href="#">Login</a> </p>
+                        </footer>
+            
+                    </div>
+                    <div class="circle c1"></div>
+                    <div class="circle c2"></div>
+                </div>
+        
+    
+            
+        
+            </div>
+        </div>
+        
+
+
+    </div>
+    <div class = "footer">
+        
+    </div>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getDatabase,ref,set,get,child} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+    
+  
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyCh8R6bq87JX0AEqZMaHdW5Y2yec2o9bdA",
+      authDomain: "contactus-aadee.firebaseapp.com",
+      projectId: "contactus-aadee",
+      storageBucket: "contactus-aadee.appspot.com",
+      messagingSenderId: "134936206527",
+      appId: "1:134936206527:web:4d8cc8ab5d10e45fcbfa0a"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db=getDatabase(app);
+          document.getElementById("send").addEventListener('click', function(e){
+         e.preventDefault();
+         set(ref(db, 'user/' + document.getElementById("name").value),
+         {
+  
+           username: document.getElementById("name").value,
+           email: document.getElementById("email").value,
+           PhoneNumber: document.getElementById("phone").value,
+           Message: document.getElementById("message").value
+  
+         });
+           alert("Sent Sucessfully  !");
+        })
+  </script>
+  <script src = "hello.js">
+
+  </script>
+</body>
+
+</html>

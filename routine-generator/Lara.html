@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time table</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+    table, th, td {
+        border:3px solid black;
+      }
+      table{
+        width:100%;
+      }
+
+      </style>
+      <link rel="stylesheet" href="routine.css">
+        
+    <link rel="stylesheet" href="next.css">
+    
+
+    
+        
+    
+</head>
+
+<body>
+    <div class="body-3">
+    <div class="bar">
+
+        <div  class = "Logo"><img src = "Logo.gif"></div>
+
+        <div class = "nav">
+
+            <ul>
+              <a href="index.html" id="ho"><li>Home</li></a>
+               <a href="#content1" id="co"> <li>Content</li></a>
+                <a href="#about" id="ab"><li>About</li></a>
+                <a href="#contact" id="con"><li>Contact</li></a>
+            </ul>
+        </div>
+
+
+    </div>
+
+                    <div id="table-1">
+                        <h2>CREATE TIME</h2>
+                        <h2>TABLE</h3>
+                        <div class="box-1">
+                        
+                            <label for="number_of_subject"></label><br>
+                            <input type="number" name="" id="number_of_subject" placeholder="Number of Periods" ><br>
+                            <button id="create">Create</button><br>
+                        
+                            
+                        
+                            
+                            <label for="name_of_subject"></label><br>
+                            <input type="text" id="name_of_subject" placeholder="name of subject"><br>
+                            <label for="frequency"></label><br>
+                            <input type="number" id="frequency" placeholder="frequency"><br>
+                            
+                
+                            <button id="genrate">Add</button><br>
+                            <button id="shuffle">Enter</button>
+                        
+                        </div>
+                        <button id="show">show</button>
+                        
+                    </div>
+                    <div id="list"></div>
+                    <table id="tab"> </table>;
+                    
+                    <button id="reset">reset</button>
+                    <script src="hello.js"></script>
+    
+                </div>
+
+    </div>
+</body>
+
+</html>
