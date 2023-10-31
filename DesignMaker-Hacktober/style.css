@@ -229,7 +229,7 @@ text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72; letter-spacing:11px; marg
 }
 
 .site-footer {
-	
+
 	background: url('http://texturelib.com/Textures/brick/stone%20wall/brick_stone_wall_0015_01_preview.jpg'); 
 	color: white;
 }
@@ -250,4 +250,38 @@ text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72; letter-spacing:11px; marg
 	body {
 		font-size: 20px;
 	}
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens, e.g., mobile devices */
+    .site-header {
+        height: auto;
+    }
+
+    .site-header h1 {
+        font-size: 2em;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    .site-header p {
+        letter-spacing: 0.03em;
+        margin-top: 0;
+    }
+
+    .main-navigation {
+        background: none;
+        text-align: center;
+    }
+
+    .main-navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-navigation li {
+        display: block;
+        padding: 0.5em 0;
+    }
 }
