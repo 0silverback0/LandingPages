@@ -1,0 +1,287 @@
+
+@import 'https://fonts.googleapis.com/css?family=Baumans|Roboto+Slab:300,400&subset=cyrillic,cyrillic-ext,latin-ext';
+
+/* Main resets */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body,
+ol,
+ul {
+	margin: 0;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+ul:hover{
+    cursor: pointer;
+}
+
+/* Typography */
+
+body {
+	font-size: 16px;
+	font-family: Roboto Slab, Lucida Grande, Segoe UI, sans-serif;
+	-webkit-font-smoothing:antialised;
+	text-rendering:optimizeLegibility;
+	text-shadow:1px 1px 5px rgba (0, 0, 0, 0.07);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding-bottom: 15px;
+}
+
+h1 {
+	font-size: 2.49em;
+	font-family: Opal;
+}
+
+h2 {
+	font-size: 2.15em;
+		font-family: Opal;
+}
+
+h3 {
+	font-size: 2.04em;
+		font-family: Opal;
+}
+
+h4
+{
+	font-size: 1.75em;
+		font-family: Opal;
+}
+
+h5,
+p.lead,
+blockquote {
+	font-size: 1.125em;
+	line-height: 1.45;
+}
+
+h6,
+p.small {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 300;
+	max-width: 65ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li {
+	font-size: 0.84em;
+}
+
+hr {
+	max-widtH: 65ch;
+}
+
+
+/* Site-widths */
+
+.width320 {
+	max-width: 320px;
+}
+
+.width640 {
+	max-width: 640px;
+}
+
+.width960 {
+	max-width: 960px;
+}
+
+.width1280 {
+	max-width: 1280px;
+}
+
+.width1440 {
+	max-width: 1440px;
+}
+
+.width1600 {
+	max-width: 1600px;
+}
+
+.full-width {
+	max-width: 100%;
+}
+
+
+/* Layout */
+
+header,
+main,
+aside,
+nav,
+footer {
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+.center-site {
+	margin: 0 auto;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.infobox {padding:0.8em; margin:0.8em}
+
+
+/* Design */
+
+
+/* 	body {background:#c9c9c9;} */
+
+.site {}
+
+.site-header,
+.main-navigation,
+.site-main,
+.sidebar,
+.site-footer {
+	padding: 0.8em;
+}
+
+.site-header {
+	min-height: 100%;
+	height: 100vh;
+}
+
+.center-nav {
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.inline-nav {
+	display: flex;
+	justify-content: space-between;
+	text-shadow:1px 1x 1px black;
+}
+
+.custom-logo {
+	width: 280px;
+	height: auto;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:#0c0c10;
+	color:#d5ceb2;
+	
+}
+
+.site-header h1 {font-size:160px; 
+text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72; letter-spacing:11px; margin-bottom:0; padding:0;}
+
+.site-header p {letter-spacing:2px; margin-top:-30px;}
+
+.main-navigation {
+	background: url('http://orig01.deviantart.net/dbf2/f/2012/096/9/6/artdeco_pattern_by_leikoo-d4v6l5k.jpg'); 
+	color: white;
+	text-shadow:1px 1px 1px black;
+}
+
+.main-navigation h3 {padding:0; margin:0;}
+
+.main-navigation li {
+	display: inline;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+	.background {background:url('https://www.arizonatile.com/~/media/images/products/product-photos/limestone/classic-limestone/limestone-classic-limestone-swatch.ashx?mh=700');}
+
+.pattern {background:url('http://st.depositphotos.com/1402765/3844/v/950/depositphotos_38445229-Art-deco-vector-geometric-pattern.jpg')}
+
+.article-main {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;
+}
+
+.site-footer {
+
+	background: url('http://texturelib.com/Textures/brick/stone%20wall/brick_stone_wall_0015_01_preview.jpg'); 
+	color: white;
+}
+
+@media screen and (min-width: 40em) {
+	body {
+		font-size: 17.5px;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	body {
+		font-size: 19.3px;
+	}
+}
+
+@media screen and (min-width:120em) {
+	body {
+		font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens, e.g., mobile devices */
+    .site-header {
+        height: auto;
+    }
+
+    .site-header h1 {
+        font-size: 2em;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    .site-header p {
+        letter-spacing: 0.03em;
+        margin-top: 0;
+    }
+
+    .main-navigation {
+        background: none;
+        text-align: center;
+    }
+
+    .main-navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-navigation li {
+        display: block;
+        padding: 0.5em 0;
+    }
+}
